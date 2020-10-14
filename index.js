@@ -5,6 +5,9 @@ const app = require('express')();
 let port = process.env.PORT || 3000;
 let mongoUrl = process.env.MONGO_URL || 'mongodb://localhost:27017';
 
+const crawler = require('./controllers/crawler');
+const display = require('./controllers/display');
+
 
 var option = {
     reconnectTries: process.env.MONGO_RECONN_TRIES,
@@ -25,6 +28,9 @@ mongoose.connect(mongoUrl, option, err => {
         console.log("Connected to DB");
     }
 });
+
+app.get('/crawl', crawler.start);
+app.get('/getData', display.getParsedUrls);
 
 app.listen(port, function () {
     console.log('Server started on port ', port);
