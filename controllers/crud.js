@@ -1,4 +1,4 @@
-const urlModel = require('../Models/urlModel');
+const urlModel = require('../models/urlModel');
 const util = require('util');
 var e = {};
 

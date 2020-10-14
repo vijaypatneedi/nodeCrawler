@@ -1,5 +1,5 @@
 const saveData = require('./crud');
-const urlModel = require('../Models/urlModel');
+const urlModel = require('../models/urlModel');
 var cheerio = require('cheerio');
 var request = require('request');
 const util = require('util');
