@@ -1,0 +1,22 @@
+{
+  "name": "nodecrawler",
+  "version": "1.0.0",
+  "description": "crawling using nodejs asynchronously",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijaypatneedi/nodeCrawler.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "vijay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijaypatneedi/nodeCrawler/issues"
+  },
+  "homepage": "https://github.com/vijaypatneedi/nodeCrawler#readme"
+}
